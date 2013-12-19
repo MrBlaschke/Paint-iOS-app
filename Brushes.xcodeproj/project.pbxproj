@@ -35,6 +35,9 @@
 		5D348D891386FDA200BB0047 /* WDImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D348D881386FDA200BB0047 /* WDImportController.m */; };
 		5D3C1A76138771900040D261 /* dropbox_icon_directory.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C1A74138771900040D261 /* dropbox_icon_directory.png */; };
 		5D3C1A77138771900040D261 /* dropbox_icon_generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C1A75138771900040D261 /* dropbox_icon_generic.png */; };
+		66C884581860131200D7DE34 /* icn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C884571860131200D7DE34 /* icn.png */; };
+		66C8845A1860134F00D7DE34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C884591860134F00D7DE34 /* Images.xcassets */; };
+		66C8845C1860139000D7DE34 /* icn60.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8845B1860139000D7DE34 /* icn60.png */; };
 		6B00DA531405F65F00E45409 /* WDActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00DA521405F65E00E45409 /* WDActivity.m */; };
 		6B00DA5A1406022B00E45409 /* WDActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00DA591406022B00E45409 /* WDActivityManager.m */; };
 		6B00DA5D140604CE00E45409 /* WDActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00DA5C140604CE00E45409 /* WDActivityController.m */; };
@@ -465,6 +468,9 @@
 		5D348D881386FDA200BB0047 /* WDImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImportController.m; sourceTree = "<group>"; };
 		5D3C1A74138771900040D261 /* dropbox_icon_directory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropbox_icon_directory.png; path = Images/dropbox_icon_directory.png; sourceTree = "<group>"; };
 		5D3C1A75138771900040D261 /* dropbox_icon_generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropbox_icon_generic.png; path = Images/dropbox_icon_generic.png; sourceTree = "<group>"; };
+		66C884571860131200D7DE34 /* icn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn.png; sourceTree = "<group>"; };
+		66C884591860134F00D7DE34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Brushes/Images.xcassets; sourceTree = "<group>"; };
+		66C8845B1860139000D7DE34 /* icn60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn60.png; sourceTree = "<group>"; };
 		6B00DA511405F65E00E45409 /* WDActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDActivity.h; sourceTree = "<group>"; };
 		6B00DA521405F65E00E45409 /* WDActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDActivity.m; sourceTree = "<group>"; };
 		6B00DA581406022B00E45409 /* WDActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDActivityManager.h; sourceTree = "<group>"; };
@@ -1069,6 +1075,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				66C884591860134F00D7DE34 /* Images.xcassets */,
 				6B40CCDE181FC9BA00004FB2 /* en.lproj */,
 				6B9394CC1452407900305670 /* Shaders */,
 				6B616773137B429200BEC0BA /* Samples */,
@@ -1300,6 +1307,8 @@
 		6B4A15F615D38D2000348E54 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				66C8845B1860139000D7DE34 /* icn60.png */,
+				66C884571860131200D7DE34 /* icn.png */,
 				6B8E5580181F2A0F0022F573 /* AppIcon29x29.png */,
 				6B8E5581181F2A0F0022F573 /* AppIcon29x29@2x.png */,
 				6BE58FCD181F33720002AE0E /* AppIcon29x29-Classic.png */,
@@ -1893,7 +1902,7 @@
 				ORGANIZATIONNAME = "Taptrix, Inc.";
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = CQ46W8F62S;
+						DevelopmentTeam = B58F7HW7NF;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -1943,6 +1952,7 @@
 				6B8E558E181F2A0F0022F573 /* AppIcon40x40.png in Resources */,
 				6B84A690146CDB6900D1D093 /* colorburn.fsh in Resources */,
 				6B84A691146CDB6900D1D093 /* colordodge.fsh in Resources */,
+				66C884581860131200D7DE34 /* icn.png in Resources */,
 				6B84A692146CDB6900D1D093 /* darken.fsh in Resources */,
 				6B40CE8E181FD36600004FB2 /* PropertyCell.xib in Resources */,
 				6B84A693146CDB6900D1D093 /* difference.fsh in Resources */,
@@ -1954,6 +1964,7 @@
 				6B84A698146CDB6900D1D093 /* overlay.fsh in Resources */,
 				6B84A699146CDB6900D1D093 /* screen.fsh in Resources */,
 				6B13DE69146A109C00BD5D85 /* blit.fsh in Resources */,
+				66C8845A1860134F00D7DE34 /* Images.xcassets in Resources */,
 				6B13DE6A146A109C00BD5D85 /* blit.vsh in Resources */,
 				6BD595C3152D6E070014A798 /* compositeWithEraseMask.fsh in Resources */,
 				6BF1B94F1461D66C009C4710 /* brush.vsh in Resources */,
@@ -2153,6 +2164,7 @@
 				6B1E107415ED6D41006128D8 /* Samples HD in Resources */,
 				6B1E108915EFEB57006128D8 /* Settings.bundle in Resources */,
 				6B40CE8A181FD36600004FB2 /* Layers.xib in Resources */,
+				66C8845C1860139000D7DE34 /* icn60.png in Resources */,
 				6BF194E21607C97500D36BC7 /* unlockFade.png in Resources */,
 				6BF194E41607D15F00D36BC7 /* unlockFade@2x.png in Resources */,
 				6B5F0F6416005A3C00E44FB8 /* BlueTooth.png in Resources */,
@@ -2376,8 +2388,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: grubby z (4N2MDE4LU4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2398,7 +2412,7 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2C593619-6E82-42D3-B48D-8D4C7BA6725B";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2410,8 +2424,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: grubby z (4N2MDE4LU4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2430,7 +2446,7 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2C593619-6E82-42D3-B48D-8D4C7BA6725B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2463,8 +2479,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: grubby z (4N2MDE4LU4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2483,7 +2501,7 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2C593619-6E82-42D3-B48D-8D4C7BA6725B";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2519,9 +2537,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Brushes.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: grubby z (4N2MDE4LU4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2541,7 +2561,7 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2C593619-6E82-42D3-B48D-8D4C7BA6725B";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

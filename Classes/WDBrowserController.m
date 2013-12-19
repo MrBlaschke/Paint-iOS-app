@@ -29,7 +29,7 @@
 #import "WDUtilities.h"
 #import "WDPaintingIterator.h"
 
-#define ALLOW_CAMERA_IMPORT NO
+#define ALLOW_CAMERA_IMPORT YES
 
 static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
 
@@ -49,7 +49,7 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
 - (void) buildDefaultNavBar
 {
     [self updateTitle];
-    
+
     // Create an add button to display in the top right corner.
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                              target:self
@@ -382,7 +382,7 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     if (!self.isEditing) {
         NSUInteger index = [(UIView *)sender tag];
         WDDocument *document = [[WDPaintingManager sharedInstance] paintingAtIndex:index];
-        [self openDocument:document editing:NO];
+        [self openDocument:document editing:YES];
     } else {
         WDThumbnailView     *thumbnail = (WDThumbnailView *)sender;
         NSString            *filename = [[WDPaintingManager sharedInstance] fileAtIndex:[thumbnail tag]];
@@ -457,7 +457,7 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     
     gridView = [[WDGridView alloc] initWithFrame:frame];
     gridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	gridView.backgroundColor = [UIColor colorWithWhite:0.95f alpha:1];
+	gridView.backgroundColor = [UIColor colorWithRed:.20f green:.20f blue:.25f alpha:1.0f];
     gridView.delegate = self;
     gridView.alwaysBounceVertical = YES;
     gridView.dataSource = self;

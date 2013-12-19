@@ -192,21 +192,21 @@
         titleField_.textAlignment = UITextAlignmentCenter;
         titleField_.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         titleField_.delegate = self;
-        titleField_.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:([self runningOnPhone] ? 16 : 20)];
-        titleField_.textColor = [UIColor blackColor];
+        titleField_.font = [UIFont fontWithName:@"HelveticaNeue" size:([self runningOnPhone] ? 16 : 20)];
+        titleField_.textColor = [UIColor whiteColor];
         titleField_.clearButtonMode = UITextFieldViewModeWhileEditing;
         titleField_.returnKeyType = UIReturnKeyDone;
         titleField_.autocapitalizationType = UITextAutocapitalizationTypeWords;
         titleField_.borderStyle = UITextBorderStyleNone;
         titleField_.opaque = NO;
-        titleField_.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.6];
+        titleField_.backgroundColor = [UIColor colorWithWhite:.2 alpha:.5f];
         [titleField_ addTarget:self action:@selector(textEdited:) forControlEvents:(UIControlEventEditingDidEndOnExit)]; 
         [titleField_ addTarget:self action:@selector(textEditingDidEnd:) forControlEvents:(UIControlEventEditingDidEnd)];
         
         [titleField_ sizeToFit];
         frame = titleField_.frame;
         frame.size.width = CGRectGetWidth(self.bounds);
-        frame.size.height += 4;
+        frame.size.height += 6;
         frame.origin = CGPointMake(0, CGRectGetHeight(self.bounds) - frame.size.height);
         titleField_.frame = frame;
         

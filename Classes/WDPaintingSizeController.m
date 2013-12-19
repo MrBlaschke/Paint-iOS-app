@@ -406,7 +406,7 @@ const NSUInteger WDMaximumDimension = 2048;
         self.navigationItem.leftBarButtonItem = cancel;
     }
     
-    self.view.backgroundColor = (WDUseModernAppearance() && !WDDeviceIsPhone()) ? nil : [UIColor colorWithWhite:0.95 alpha:1];
+    self.view.backgroundColor = (WDUseModernAppearance() && !WDDeviceIsPhone()) ? nil : [UIColor colorWithRed:.20f green:.20f blue:.25f alpha:1.0f];
     self.toolbarItems = [self defaultToolbarItems];
     
     if (WDUseModernAppearance()) {

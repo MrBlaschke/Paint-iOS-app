@@ -348,7 +348,7 @@
 {
     [super viewDidLoad];    
  
-    self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];;
+    self.view.backgroundColor = [UIColor colorWithRed:.20f green:.20f blue:.25f alpha:1.0f];
     
     brushTable.rowHeight = kRowHeight;
     brushTable.backgroundColor = nil;

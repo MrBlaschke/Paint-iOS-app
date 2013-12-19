@@ -56,6 +56,9 @@
     
     self.layer.contents = (id) anImage.CGImage;
     self.layer.contentsGravity = @"resizeAspectFill";
+    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.layer.shadowColor =[UIColor lightGrayColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(1, 1);
     self.clipsToBounds = YES;
 }
 
@@ -72,7 +75,7 @@
         markView = nil;
     } else {
         if (!markView) {
-            UIImage *checkmark = [UIImage relevantImageNamed:@"checkmark.png"];
+            UIImage *checkmark = [UIImage relevantImageNamed:@"stylus_selected.png"];
             markView = [[UIImageView alloc] initWithImage:checkmark];
             [self addSubview:markView];
         }

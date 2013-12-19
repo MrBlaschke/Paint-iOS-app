@@ -46,8 +46,8 @@ NSString *WDDropboxWasUnlinkedNotification = @"WDDropboxWasUnlinkedNotification"
     #endif
     
     NSLog(@"No Dropbox Keys!");
-    NSString *appKey = @"xxxx";
-    NSString *appSecret = @"xxxx";
+    NSString *appKey = @"048zy8jzwq3wvv1";
+    NSString *appSecret = @"7d7g95epvdkj2jc";
     
     DBSession *session = [[DBSession alloc] initWithAppKey:appKey appSecret:appSecret root:kDBRootDropbox];
     session.delegate = self; // DBSessionDelegate methods allow you to handle re-authenticating
@@ -62,6 +62,9 @@ NSString *WDDropboxWasUnlinkedNotification = @"WDDropboxWasUnlinkedNotification"
     window.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
     
     window.rootViewController = navigationController;
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:.35f green:.85f blue:.89f alpha:1.0f]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:.20f green:.20f blue:.25f alpha:1.0f]];
+    [[UIToolbar appearance] setBarTintColor:[UIColor colorWithRed:.20f green:.20f blue:.25f alpha:1.0f]];
     [window makeKeyAndVisible];
 
     // use this line to forget registered Pogo Connects

@@ -14,7 +14,7 @@
 
 const NSUInteger    kWDDefaultBarHeight = 44;
 const NSUInteger    kWDLandscapePhoneBarHeight = 32;
-const float         kWDBarItemShadowOpacity = 0.9f;
+const float         kWDBarItemShadowOpacity = 0.2f;
 
 @implementation WDBarItem
 
@@ -326,7 +326,7 @@ const float         kWDBarItemShadowOpacity = 0.9f;
     }
     
     self.opaque = NO;
-    self.backgroundColor = nil;
+    self.backgroundColor = [UIColor clearColor];
     self.autoresizingMask = (UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth);
     self.defaultFlexibleSpacing = 10;
     
@@ -567,11 +567,11 @@ const float         kWDBarItemShadowOpacity = 0.9f;
 
 - (void) addEdge
 {
-    self.backgroundColor = [UIColor colorWithWhite:0.667f alpha:0.667f];
+    self.backgroundColor = [UIColor colorWithRed:.20f green:.20f blue:.25f alpha:.2f];
     //self.backgroundColor = [UIColor colorWithRed:(34.0 / 255) green:(62.0 / 255) blue:(83.0 / 255) alpha:0.5];
     
     // main edge
-    [self addEdge:[UIColor darkGrayColor] offset:1];
+    [self addEdge:[UIColor colorWithRed:.20f green:.20f blue:.25f alpha:.3f] offset:1];
 }
 
 - (void) setOrientation:(UIInterfaceOrientation)orientation
