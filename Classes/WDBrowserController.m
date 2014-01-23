@@ -130,9 +130,9 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     };
     [iterator processNext];
     
-    NSString *subject = NSLocalizedString(@"Brushes Paintings", @"Brushes Paintings");
+    NSString *subject = NSLocalizedString(@"Paintings", @"Paintings");
     if (selectedPaintings_.count == 1) {
-        subject = NSLocalizedString(@"Brushes Painting: ", @"Brushes Painting: ");
+        subject = NSLocalizedString(@"Painting: ", @"Painting: ");
         subject = [subject stringByAppendingString:[[selectedPaintings_ anyObject] stringByDeletingPathExtension]];
     }
     [picker setSubject:subject];
@@ -594,7 +594,7 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
 
 - (NSString*) appFolderPath
 {
-    NSString* appFolderPath = @"Brushes";
+    NSString* appFolderPath = @"Paint";
     if (![appFolderPath isAbsolutePath]) {
         appFolderPath = [@"/" stringByAppendingString:appFolderPath];
     }

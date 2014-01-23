@@ -41,14 +41,9 @@ NSString *WDDropboxWasUnlinkedNotification = @"WDDropboxWasUnlinkedNotification"
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
-    #if !WD_DEBUG
-    #warning "Set appropriate Dropbox keys before submitting to the app store."
-    #endif
     
-    NSLog(@"No Dropbox Keys!");
     NSString *appKey = @"048zy8jzwq3wvv1";
     NSString *appSecret = @"7d7g95epvdkj2jc";
-    
     DBSession *session = [[DBSession alloc] initWithAppKey:appKey appSecret:appSecret root:kDBRootDropbox];
     session.delegate = self; // DBSessionDelegate methods allow you to handle re-authenticating
     [DBSession setSharedSession:session];
